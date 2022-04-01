@@ -18,5 +18,6 @@ from django.urls import include,path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('rosetta', include('rosetta.urls')),
     path('generator', include('generator.urls')),    
 ]
