@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 13:23+0200\n"
+"POT-Creation-Date: 2022-04-02 00:29+0200\n"
 "PO-Revision-Date: 2022-04-01 13:26+0009\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: pnjenerator/settings.py:112
+#: pnjenerator/pnjenerator/settings.py:112
 msgid "English"
 msgstr "Anglais"
 
-#: pnjenerator/settings.py:113
+#: pnjenerator/pnjenerator/settings.py:113
 msgid "French"
 msgstr "Français"

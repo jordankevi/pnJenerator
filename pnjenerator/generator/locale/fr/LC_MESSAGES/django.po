@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 13:23+0200\n"
-"PO-Revision-Date: 2022-04-01 13:26+0009\n"
+"POT-Creation-Date: 2022-04-02 00:29+0200\n"
+"PO-Revision-Date: 2022-04-02 00:44+0009\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,6 +19,319 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: generator/templates/generator/index.html:8
+#: pnjenerator/generator/templates/generator/index.html:8
 msgid "Character Name"
 msgstr "Nom du personnage"
+
+#: pnjenerator/generator/templates/generator/index.html:8
+msgid "Thoradin Fireforge"
+msgstr "Thoradin Fireforge"
+
+#: pnjenerator/generator/templates/generator/index.html:13
+msgid "Class & Level"
+msgstr "Classe et Niveau"
+
+#: pnjenerator/generator/templates/generator/index.html:13
+msgid "Paladin 2"
+msgstr "Paladin 2"
+
+#: pnjenerator/generator/templates/generator/index.html:16
+msgid "Background"
+msgstr "Historique"
+
+#: pnjenerator/generator/templates/generator/index.html:16
+msgid "Acolyte"
+msgstr "Acolyte"
+
+#: pnjenerator/generator/templates/generator/index.html:19
+#| msgid "Character Name"
+msgid "Player Name"
+msgstr "Nom du joueur"
+
+#: pnjenerator/generator/templates/generator/index.html:19
+msgid "Player McPlayerface"
+msgstr "Joueur McJoueurFace"
+
+#: pnjenerator/generator/templates/generator/index.html:22
+msgid "Race"
+msgstr "Race"
+
+#: pnjenerator/generator/templates/generator/index.html:25
+msgid "Alignment"
+msgstr "Alignement"
+
+#: pnjenerator/generator/templates/generator/index.html:25
+msgid "Lawful Good"
+msgstr "Loyal Bon"
+
+#: pnjenerator/generator/templates/generator/index.html:28
+msgid "Experience Points"
+msgstr "Points d'Expérience"
+
+#: pnjenerator/generator/templates/generator/index.html:40
+#: pnjenerator/generator/templates/generator/index.html:104
+msgid "Strength"
+msgstr "Force"
+
+#: pnjenerator/generator/templates/generator/index.html:48
+#: pnjenerator/generator/templates/generator/index.html:107
+msgid "Dexterity"
+msgstr "Dextérité"
+
+#: pnjenerator/generator/templates/generator/index.html:56
+#: pnjenerator/generator/templates/generator/index.html:110
+msgid "Constitution"
+msgstr "Constitution"
+
+#: pnjenerator/generator/templates/generator/index.html:64
+#: pnjenerator/generator/templates/generator/index.html:113
+msgid "Wisdom"
+msgstr "Sagesse"
+
+#: pnjenerator/generator/templates/generator/index.html:72
+#: pnjenerator/generator/templates/generator/index.html:116
+msgid "Intelligence"
+msgstr "Intelligence"
+
+#: pnjenerator/generator/templates/generator/index.html:80
+#: pnjenerator/generator/templates/generator/index.html:119
+msgid "Charisma"
+msgstr "Charisme"
+
+#: pnjenerator/generator/templates/generator/index.html:91
+msgid "Inspiration"
+msgstr "Inspiration"
+
+#: pnjenerator/generator/templates/generator/index.html:97
+msgid "Proficiency Bonus"
+msgstr "Points de Compétences"
+
+#: pnjenerator/generator/templates/generator/index.html:123
+msgid "Saving Throws"
+msgstr "Jets de Sauvegarde"
+
+#: pnjenerator/generator/templates/generator/index.html:129
+msgid "Acrobatics"
+msgstr "Acrobaties"
+
+#: pnjenerator/generator/templates/generator/index.html:129
+#: pnjenerator/generator/templates/generator/index.html:174
+#: pnjenerator/generator/templates/generator/index.html:177
+msgid "Dex"
+msgstr "Dex"
+
+#: pnjenerator/generator/templates/generator/index.html:132
+msgid "Animal Handling"
+msgstr "Dressage"
+
+#: pnjenerator/generator/templates/generator/index.html:132
+#: pnjenerator/generator/templates/generator/index.html:147
+#: pnjenerator/generator/templates/generator/index.html:156
+#: pnjenerator/generator/templates/generator/index.html:162
+#: pnjenerator/generator/templates/generator/index.html:180
+msgid "Wis"
+msgstr "Sagesse"
+
+#: pnjenerator/generator/templates/generator/index.html:135
+msgid "Arcana"
+msgstr "Arcanes"
+
+#: pnjenerator/generator/templates/generator/index.html:135
+#: pnjenerator/generator/templates/generator/index.html:144
+#: pnjenerator/generator/templates/generator/index.html:153
+#: pnjenerator/generator/templates/generator/index.html:159
+#: pnjenerator/generator/templates/generator/index.html:171
+msgid "Int"
+msgstr "Int"
+
+#: pnjenerator/generator/templates/generator/index.html:138
+msgid "Athletics"
+msgstr "Athlétisme"
+
+#: pnjenerator/generator/templates/generator/index.html:138
+msgid "Str"
+msgstr "For"
+
+#: pnjenerator/generator/templates/generator/index.html:141
+msgid "Deception"
+msgstr "Tromperie"
+
+#: pnjenerator/generator/templates/generator/index.html:141
+#: pnjenerator/generator/templates/generator/index.html:150
+#: pnjenerator/generator/templates/generator/index.html:165
+#: pnjenerator/generator/templates/generator/index.html:168
+msgid "Cha"
+msgstr "Cha"
+
+#: pnjenerator/generator/templates/generator/index.html:144
+msgid "History"
+msgstr "Histoire"
+
+#: pnjenerator/generator/templates/generator/index.html:147
+msgid "Insight"
+msgstr "Intuition"
+
+#: pnjenerator/generator/templates/generator/index.html:150
+msgid "Intimidation"
+msgstr "Intimidation"
+
+#: pnjenerator/generator/templates/generator/index.html:153
+msgid "Investigation"
+msgstr "Investigation"
+
+#: pnjenerator/generator/templates/generator/index.html:156
+msgid "Medicine"
+msgstr "Médecine"
+
+#: pnjenerator/generator/templates/generator/index.html:159
+msgid "Nature"
+msgstr "Nature"
+
+#: pnjenerator/generator/templates/generator/index.html:162
+#: pnjenerator/generator/templates/generator/index.html:191
+msgid "Perception"
+msgstr "Perception"
+
+#: pnjenerator/generator/templates/generator/index.html:165
+msgid "Performance"
+msgstr "Représentation"
+
+#: pnjenerator/generator/templates/generator/index.html:168
+msgid "Persuasion"
+msgstr "Persuasion"
+
+#: pnjenerator/generator/templates/generator/index.html:171
+msgid "Religion"
+msgstr "Religion"
+
+#: pnjenerator/generator/templates/generator/index.html:174
+msgid "Sleight of Hand"
+msgstr "Escamotage"
+
+#: pnjenerator/generator/templates/generator/index.html:177
+msgid "Stealth"
+msgstr "Discrétion"
+
+#: pnjenerator/generator/templates/generator/index.html:180
+msgid "Survival"
+msgstr "Survie"
+
+#: pnjenerator/generator/templates/generator/index.html:184
+msgid "Skills"
+msgstr "Compétences"
+
+#: pnjenerator/generator/templates/generator/index.html:191
+msgid "Passive Wisdom"
+msgstr "Sagesse Passive"
+
+#: pnjenerator/generator/templates/generator/index.html:196
+msgid "Other Proficiencies and Languages"
+msgstr "Autres matrîses et langues"
+
+#: pnjenerator/generator/templates/generator/index.html:203
+msgid "Armor Class"
+msgstr "Classe d'Armure"
+
+#: pnjenerator/generator/templates/generator/index.html:208
+msgid "Initiative"
+msgstr "Initiative"
+
+#: pnjenerator/generator/templates/generator/index.html:213
+msgid "Speed"
+msgstr "Vitesse"
+
+#: pnjenerator/generator/templates/generator/index.html:219
+msgid "Hit Point Maximum"
+msgstr "Maximum de points de vie"
+
+#: pnjenerator/generator/templates/generator/index.html:222
+msgid "Current Hit Points"
+msgstr "Points de Vie Actuels"
+
+#: pnjenerator/generator/templates/generator/index.html:226
+msgid "Temporary Hit Points"
+msgstr "Points de Vie Temporaires"
+
+#: pnjenerator/generator/templates/generator/index.html:232
+msgid "Total"
+msgstr "Total"
+
+#: pnjenerator/generator/templates/generator/index.html:235
+msgid "Hit Dice"
+msgstr "Dés de Vie"
+
+#: pnjenerator/generator/templates/generator/index.html:242
+msgid "Death Saves"
+msgstr "Jets de Sauvegarde contre la Mort"
+
+#: pnjenerator/generator/templates/generator/index.html:246
+msgid "Successes"
+msgstr "Succès"
+
+#: pnjenerator/generator/templates/generator/index.html:254
+msgid "Failures"
+msgstr "Échecs"
+
+#: pnjenerator/generator/templates/generator/index.html:267
+msgid "Attacks & Spellcasting"
+msgstr "Attaques & Incantations"
+
+#: pnjenerator/generator/templates/generator/index.html:272
+msgid "Name"
+msgstr "Nom"
+
+#: pnjenerator/generator/templates/generator/index.html:275
+msgid "Atk Bonus"
+msgstr "Bonus d'Att"
+
+#: pnjenerator/generator/templates/generator/index.html:278
+msgid "Damage/Type"
+msgstr "Dégâts/Type"
+
+#: pnjenerator/generator/templates/generator/index.html:323
+msgid "Equipment"
+msgstr "Équipement"
+
+#: pnjenerator/generator/templates/generator/index.html:327
+msgid "cp"
+msgstr "PC"
+
+#: pnjenerator/generator/templates/generator/index.html:330
+msgid "sp"
+msgstr "PA"
+
+#: pnjenerator/generator/templates/generator/index.html:333
+msgid "ep"
+msgstr "PE"
+
+#: pnjenerator/generator/templates/generator/index.html:336
+msgid "gp"
+msgstr "PO"
+
+#: pnjenerator/generator/templates/generator/index.html:339
+msgid "pp"
+msgstr "PP"
+
+#: pnjenerator/generator/templates/generator/index.html:343
+msgid "Equipment list here"
+msgstr "Liste d'équipements"
+
+#: pnjenerator/generator/templates/generator/index.html:350
+msgid "Personality"
+msgstr "Traits de Personnalité"
+
+#: pnjenerator/generator/templates/generator/index.html:353
+msgid "Ideals"
+msgstr "Idéaux"
+
+#: pnjenerator/generator/templates/generator/index.html:356
+msgid "Bonds"
+msgstr "Obligations"
+
+#: pnjenerator/generator/templates/generator/index.html:359
+msgid "Flaws"
+msgstr "Failles"
+
+#: pnjenerator/generator/templates/generator/index.html:364
+msgid "Features & Traits"
+msgstr "Aptitudes & Traits"
