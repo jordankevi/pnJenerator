@@ -38,6 +38,10 @@ textarea {
     height: 15em;
 }
 
+::placeholder {
+    color: #bbb;
+}
+
 .textblock {
     display: flex;
     flex-direction: column-reverse;
@@ -113,6 +117,16 @@ textarea {
     bottom: 0;
     top: 0;
     margin: auto;
+}
+
+.charname input {
+    padding: 0.5em;
+    margin: 5px;
+    border: 0;
+}
+
+.charname label {
+    padding-left: 1em;
 }
 
 .misc {
