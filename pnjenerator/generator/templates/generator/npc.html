@@ -1,0 +1,369 @@
+{% load i18n %} {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'generator/new_styles.css' %}">
+
+<div class="sheet">
+    <div class="header">
+        <div class="charname">
+            <label for="charname">{% translate "Character Name" %}</label><input name="charname" placeholder="{% translate "Thoradin Fireforge" %}" />
+        </div>
+        <div class="misc">
+            <ul>
+                <li>
+                    <label for="classlevel">{% translate "Class & Level" %}</label><input name="classlevel" placeholder="{% translate "Paladin 2" %}" />
+                </li>
+                <li>
+                    <label for="background">{% translate "Background" %}</label><input name="background" placeholder="{% translate "Acolyte" %}" />
+                </li>
+                <li>
+                    <label for="playername">{% translate "Player Name" %}</label><input name="playername" placeholder="{% translate "Player McPlayerface" %}">
+                </li>
+                <li>
+                    <label for="race">{% translate "Race" %}</label><input name="race" placeholder="{% translate "Half-elf" %}" />
+                </li>
+                <li>
+                    <label for="alignment">{% translate "Alignment" %}</label><input name="alignment" placeholder="{% translate "Lawful Good" %}" />
+                </li>
+                <li>
+                    <label for="experiencepoints">{% translate "Experience Points" %}</label><input name="experiencepoints" placeholder="3240" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="section">
+            <div class="attributes">
+                <div class="scores">
+                    <ul>
+                        <li>
+                            <div class="score">
+                                <label for="Strengthscore">{% translate "Strength" %}</label><input name="Strengthscore" placeholder="10" class="stat" />
+                            </div>
+                            <div class="modifier">
+                                <input name="Strengthmod" placeholder="+0" class="statmod" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="score">
+                                <label for="Dexterityscore">{% translate "Dexterity" %}</label><input name="Dexterityscore" placeholder="10" class="stat" />
+                            </div>
+                            <div class="modifier">
+                                <input name="Dexteritymod" placeholder="+0" class=statmod/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="score">
+                                <label for="Constitutionscore">{% translate "Constitution" %}</label><input name="Constitutionscore" placeholder="10" class="stat" />
+                            </div>
+                            <div class="modifier">
+                                <input name="Constitutionmod" placeholder="+0" class="statmod" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="score">
+                                <label for="Wisdomscore">{% translate "Wisdom" %}</label><input name="Wisdomscore" placeholder="10" class="stat" />
+                            </div>
+                            <div class="modifier">
+                                <input name="Wisdommod" placeholder="+0" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="score">
+                                <label for="Intelligencescore">{% translate "Intelligence" %}</label><input name="Intelligencescore" placeholder="10" class="stat" />
+                            </div>
+                            <div class="modifier">
+                                <input name="Intelligencemod" placeholder="+0" class="statmod" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="score">
+                                <label for="Charismascore">{% translate "Charisma" %}</label><input name="Charismascore" placeholder="10" class="stat" />
+                            </div>
+                            <div class="modifier">
+                                <input name="Charismamod" placeholder="+0" class="statmod" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="attr-applications">
+                    <div class="inspiration box">
+                        <div class="label-container">
+                            <label for="inspiration">{% translate "Inspiration" %}</label>
+                        </div>
+                        <input name="inspiration" type="checkbox" />
+                    </div>
+                    <div class="proficiencybonus box">
+                        <div class="label-container">
+                            <label for="proficiencybonus">{% translate "Proficiency Bonus"%}</label>
+                        </div>
+                        <input name="proficiencybonus" placeholder="+2" />
+                    </div>
+                    <div class="saves list-section box">
+                        <ul>
+                            <li>
+                                <label for="Strength-save">{% translate "Strength" %}</label><input name="Strength-save" placeholder="+0" type="text" /><input name="Strength-save-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Dexterity-save">{% translate "Dexterity" %}</label><input name="Dexterity-save" placeholder="+0" type="text" /><input name="Dexterity-save-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Constitution-save">{% translate "Constitution" %}</label><input name="Constitution-save" placeholder="+0" type="text" /><input name="Constitution-save-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Wisdom-save">{% translate "Wisdom" %}</label><input name="Wisdom-save" placeholder="+0" type="text" /><input name="Wisdom-save-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Intelligence-save">{% translate "Intelligence" %}</label><input name="Intelligence-save" placeholder="+0" type="text" /><input name="Intelligence-save-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Charisma-save">{% translate "Charisma" %}</label><input name="Charisma-save" placeholder="+0" type="text" /><input name="Charisma-save-prof" type="checkbox" />
+                            </li>
+                        </ul>
+                        <div class="label">
+                            {% translate "Saving Throws" %}
+                        </div>
+                    </div>
+                    <div class="skills list-section box">
+                        <ul>
+                            <li>
+                                <label for="Acrobatics">{% translate "Acrobatics" %} <span class="skill">({% translate "Dex" %})</span></label><input name="Acrobatics" placeholder="+0" type="text" /><input name="Acrobatics-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Animal Handling">{% translate "Animal Handling" %} <span class="skill">({% translate "Wis" %})</span></label><input name="Animal Handling" placeholder="+0" type="text" /><input name="Animal Handling-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Arcana">{% translate "Arcana" %} <span class="skill">({% translate "Int" %})</span></label><input name="Arcana" placeholder="+0" type="text" /><input name="Arcana-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Athletics">{% translate "Athletics" %} <span class="skill">({% translate "Str" %})</span></label><input name="Athletics" placeholder="+0" type="text" /><input name="Athletics-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Deception">{% translate "Deception" %} <span class="skill">({% translate "Cha" %})</span></label><input name="Deception" placeholder="+0" type="text" /><input name="Deception-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="History">{% translate "History" %} <span class="skill">({% translate "Int" %})</span></label><input name="History" placeholder="+0" type="text" /><input name="History-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Insight">{% translate "Insight" %} <span class="skill">({% translate "Wis" %})</span></label><input name="Insight" placeholder="+0" type="text" /><input name="Insight-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Intimidation">{% translate "Intimidation" %} <span class="skill">({% translate "Cha" %})</span></label><input name="Intimidation" placeholder="+0" type="text" /><input name="Intimidation-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Investigation">{% translate "Investigation" %} <span class="skill">({% translate "Int" %})</span></label><input name="Investigation" placeholder="+0" type="text" /><input name="Investigation-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Medicine">{% translate "Medicine" %} <span class="skill">({% translate "Wis" %})</span></label><input name="Medicine" placeholder="+0" type="text" /><input name="Medicine-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Nature">{% translate "Nature" %} <span class="skill">({% translate "Int" %})</span></label><input name="Nature" placeholder="+0" type="text" /><input name="Nature-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Perception">{% translate "Perception" %} <span class="skill">({% translate "Wis" %})</span></label><input name="Perception" placeholder="+0" type="text" /><input name="Perception-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Performance">{% translate "Performance" %} <span class="skill">({% translate "Cha" %})</span></label><input name="Performance" placeholder="+0" type="text" /><input name="Performance-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Persuasion">{% translate "Persuasion" %} <span class="skill">({% translate "Cha" %})</span></label><input name="Persuasion" placeholder="+0" type="text" /><input name="Persuasion-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Religion">{% translate "Religion" %} <span class="skill">({% translate "Int" %})</span></label><input name="Religion" placeholder="+0" type="text" /><input name="Religion-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Sleight of Hand">{% translate "Sleight of Hand" %} <span class="skill">({% translate "Dex" %})</span></label><input name="Sleight of Hand" placeholder="+0" type="text" /><input name="Sleight of Hand-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Stealth">{% translate "Stealth" %} <span class="skill">({% translate "Dex" %})</span></label><input name="Stealth" placeholder="+0" type="text" /><input name="Stealth-prof" type="checkbox" />
+                            </li>
+                            <li>
+                                <label for="Survival">{% translate "Survival" %} <span class="skill">({% translate "Wis" %})</span></label><input name="Survival" placeholder="+0" type="text" /><input name="Survival-prof" type="checkbox" />
+                            </li>
+                        </ul>
+                        <div class="label">
+                            {% translate "Skills" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="passive-perception box">
+                <div class="label-container">
+                    <label for="passiveperception">{% translate "Passive Wisdom" %} ({% translate "Perception" %})</label>
+                </div>
+                <input name="passiveperception" placeholder="10" />
+            </div>
+            <div class="otherprofs box textblock">
+                <label for="otherprofs">{% translate "Other Proficiencies and Languages" %}</label><textarea name="otherprofs"></textarea>
+            </div>
+        </div>
+        <div class="section">
+            <div class="combat">
+                <div class="armorclass">
+                    <div>
+                        <label for="ac">{% translate "Armor Class" %}</label><input name="ac" placeholder="10" type="text" />
+                    </div>
+                </div>
+                <div class="initiative">
+                    <div>
+                        <label for="initiative">{% translate "Initiative" %}</label><input name="initiative" placeholder="+0" type="text" />
+                    </div>
+                </div>
+                <div class="speed">
+                    <div>
+                        <label for="speed">{% translate "Speed" %}</label><input name="speed" placeholder="30" type="text" />
+                    </div>
+                </div>
+                <div class="hp">
+                    <div class="regular">
+                        <div class="max">
+                            <label for="maxhp">{% translate "Hit Point Maximum" %}</label><input name="maxhp" placeholder="10" type="text" />
+                        </div>
+                        <div class="current">
+                            <label for="currenthp">{% translate "Current Hit Points" %}</label><input name="currenthp" type="text" />
+                        </div>
+                    </div>
+                    <div class="temporary">
+                        <label for="temphp">{% translate "Temporary Hit Points" %}</label><input name="temphp" type="text" />
+                    </div>
+                </div>
+                <div class="hitdice">
+                    <div>
+                        <div class="total">
+                            <label onclick="totalhd_clicked()" for="totalhd">{% translate "Total" %}</label><input name="totalhd" placeholder="2d10" type="text" />
+                        </div>
+                        <div class="remaining">
+                            <label for="remaininghd">{% translate "Hit Dice" %}</label><input name="remaininghd" type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="deathsaves">
+                    <div>
+                        <div class="label">
+                            <label>{% translate "Death Saves" %}</label>
+                        </div>
+                        <div class="marks">
+                            <div class="deathsuccesses">
+                                <label>{% translate "Successes" %}</label>
+                                <div class="bubbles">
+                                    <input name="deathsuccess1" type="checkbox" />
+                                    <input name="deathsuccess2" type="checkbox" />
+                                    <input name="deathsuccess3" type="checkbox" />
+                                </div>
+                            </div>
+                            <div class="deathfails">
+                                <label>{% translate "Failures" %}</label>
+                                <div class="bubbles">
+                                    <input name="deathfail1" type="checkbox" />
+                                    <input name="deathfail2" type="checkbox" />
+                                    <input name="deathfail3" type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="attacksandspellcasting">
+                <div>
+                    <label>{% translate "Attacks & Spellcasting" %}</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    {% translate "Name" %}
+                                </th>
+                                <th>
+                                    {% translate "Atk Bonus" %}
+                                </th>
+                                <th>
+                                    {% translate "Damage/Type" %}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input name="atkname1" type="text" />
+                                </td>
+                                <td>
+                                    <input name="atkbonus1" type="text" />
+                                </td>
+                                <td>
+                                    <input name="atkdamage1" type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="atkname2" type="text" />
+                                </td>
+                                <td>
+                                    <input name="atkbonus2" type="text" />
+                                </td>
+                                <td>
+                                    <input name="atkdamage2" type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="atkname3" type="text" />
+                                </td>
+                                <td>
+                                    <input name="atkbonus3" type="text" />
+                                </td>
+                                <td>
+                                    <input name="atkdamage3" type="text" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="equipment">
+                <div>
+                    <label>{% translate "Equipment" %}</label>
+                    <div class="money">
+                        <ul>
+                            <li>
+                                <label for="cp">{% translate "cp" %}</label><input name="cp" />
+                            </li>
+                            <li>
+                                <label for="sp">{% translate "sp" %}</label><input name="sp" />
+                            </li>
+                            <li>
+                                <label for="ep">{% translate "ep" %}</label><input name="ep" />
+                            </li>
+                            <li>
+                                <label for="gp">{% translate "gp" %}</label><input name="gp" />
+                            </li>
+                            <li>
+                                <label for="pp">{% translate "pp" %}</label><input name="pp" />
+                            </li>
+                        </ul>
+                    </div>
+                    <textarea placeholder="{% translate "Equipment list here" %}"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="flavor">
+                <div class="personality">
+                    <label for="personality">{% translate "Personality" %}</label><textarea name="personality"></textarea>
+                </div>
+                <div class="ideals">
+                    <label for="ideals">{% translate "Ideals" %}</label><textarea name="ideals"></textarea>
+                </div>
+                <div class="bonds">
+                    <label for="bonds">{% translate "Bonds" %}</label><textarea name="bonds"></textarea>
+                </div>
+                <div class="flaws">
+                    <label for="flaws">{% translate "Flaws" %}</label><textarea name="flaws"></textarea>
+                </div>
+            </div>
+            <div class="features">
+                <div>
+                    <label for="features">{% translate "Features & Traits" %}</label><textarea name="features"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
