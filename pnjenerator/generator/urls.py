@@ -6,4 +6,3 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('npc', views.npc, name="npc")
 ]
-

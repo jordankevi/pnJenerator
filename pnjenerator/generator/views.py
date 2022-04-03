@@ -8,4 +8,4 @@ def index(request):
 
 def npc(request):
     activate('fr')
-    return render(request, 'generator/npc.html')
+    return render(request, 'generator/player.html')
