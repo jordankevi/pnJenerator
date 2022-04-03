@@ -192,9 +192,6 @@
                 </div>
                 <input name="passiveperception" placeholder="10" />
             </div>
-            <div class="otherprofs box textblock">
-                <label for="otherprofs">{% translate "Other Proficiencies and Languages" %}</label><textarea name="otherprofs"></textarea>
-            </div>
         </div>
         <div class="section">
             <div class="combat">
@@ -318,6 +315,30 @@
                     <textarea></textarea>
                 </div>
             </div>
+        </div>
+        <div class="section">
+            <div class="flavor">
+                <div class="personality">
+                    <label for="personality">{% translate "Personality" %}</label><textarea name="personality"></textarea>
+                </div>
+                <div class="ideals">
+                    <label for="ideals">{% translate "Ideals" %}</label><textarea name="ideals"></textarea>
+                </div>
+                <div class="bonds">
+                    <label for="bonds">{% translate "Bonds" %}</label><textarea name="bonds"></textarea>
+                </div>
+                <div class="flaws">
+                    <label for="flaws">{% translate "Flaws" %}</label><textarea name="flaws"></textarea>
+                </div>
+            </div>
+            <div class="features box textblock">
+                <label for="features">{% translate "Features & Traits" %}</label><textarea name="features"></textarea>
+            </div>
+            <div class="otherprofs box textblock">
+                <label for="otherprofs">{% translate "Other Proficiencies and Languages" %}</label><textarea name="otherprofs"></textarea>
+            </div>
+        </div>
+        <div class="section">
             <div class="equipment">
                 <div>
                     <label>{% translate "Equipment" %}</label>
@@ -343,26 +364,8 @@
                     <textarea placeholder="{% translate "Equipment list here" %}"></textarea>
                 </div>
             </div>
-        </div>
-        <div class="section">
-            <div class="flavor">
-                <div class="personality">
-                    <label for="personality">{% translate "Personality" %}</label><textarea name="personality"></textarea>
-                </div>
-                <div class="ideals">
-                    <label for="ideals">{% translate "Ideals" %}</label><textarea name="ideals"></textarea>
-                </div>
-                <div class="bonds">
-                    <label for="bonds">{% translate "Bonds" %}</label><textarea name="bonds"></textarea>
-                </div>
-                <div class="flaws">
-                    <label for="flaws">{% translate "Flaws" %}</label><textarea name="flaws"></textarea>
-                </div>
-            </div>
-            <div class="features">
-                <div>
-                    <label for="features">{% translate "Features & Traits" %}</label><textarea name="features"></textarea>
-                </div>
+            <div class="notes textblock box">
+                <label for="notes">{% translate "Notes" %}</label><textarea name="notes"></textarea>
             </div>
         </div>
     </div>

@@ -42,24 +42,6 @@ textarea {
     color: #bbb;
 }
 
-.textblock {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    align-items: center;
-}
-
-.textblock label {
-    text-align: center;
-    border: 1px solid black;
-    border-top: 0;
-    font-size: 10px;
-    width: calc(100% - 20px - 2px);
-    border-radius: 0 0 10px 10px;
-    padding: 4px 0;
-    font-weight: bold;
-}
-
 .box {
     margin-top: 10px;
 }
@@ -165,7 +147,7 @@ textarea {
 }
 
 .section {
-    width: 32%;
+    width: 24%;
     display: flex;
     flex-direction: column;
 }
@@ -334,7 +316,7 @@ textarea {
 }
 
 .otherprofs textarea {
-    height: 26em;
+    /* height: 26em; */
 }
 
 .combat {
@@ -464,6 +446,10 @@ textarea {
 .deathsave {
     flex: 1 50%;
     height: 100px;
+}
+
+.deathsaves {
+    flex: 1 50%;
 }
 
 .hitdice>div,
@@ -715,5 +701,19 @@ textarea {
 .features div textarea {
     border: 0;
     padding: 5px;
-    height: 43em;
+    /* height: 43em; */
+}
+
+.textblock {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.textblock textarea {
+    border: 0px;
+    padding: 5px;
 }
