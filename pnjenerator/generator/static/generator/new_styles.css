@@ -315,10 +315,6 @@ textarea {
     border-radius: 10px;
 }
 
-.otherprofs textarea {
-    /* height: 26em; */
-}
-
 .combat {
     background-color: #eee;
     display: flex;
