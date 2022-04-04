@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-02 00:29+0200\n"
-"PO-Revision-Date: 2022-04-02 00:44+0009\n"
+"PO-Revision-Date: 2022-04-04 01:26+0009\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -104,7 +104,7 @@ msgstr "Inspiration"
 
 #: pnjenerator/generator/templates/generator/index.html:97
 msgid "Proficiency Bonus"
-msgstr "Points de Compétences"
+msgstr "Bonus de Maîtrise"
 
 #: pnjenerator/generator/templates/generator/index.html:123
 msgid "Saving Throws"

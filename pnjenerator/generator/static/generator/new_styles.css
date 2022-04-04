@@ -217,6 +217,11 @@ textarea {
     text-align: center;
 }
 
+.attr-applications {
+    width: 80%;
+    padding: 10px;
+}
+
 .inspiration {
     display: flex;
     flex-direction: row-reverse;

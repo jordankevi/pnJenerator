@@ -1,7 +1,7 @@
 from django.db import models
 
-class Npc(models.Model):
+class Job(models.Model):
     class Meta:
         app_label = "generator"
 
-    consitution = models.IntegerField()
+    name = models.CharField(max_length=16)

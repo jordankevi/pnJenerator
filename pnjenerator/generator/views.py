@@ -3,7 +3,7 @@ from django.utils.translation import activate
 
 
 def index(request):
-    activate('fr')
+    activate('en')
     return render(request, 'generator/index.html')
 
 def npc(request):
